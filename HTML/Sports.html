@@ -6,16 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sports</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/css-sports.css">
 
 </head>
 
 <body>
-    <div class="content">
+    <script>
+        src = "../JAVASCRIPT\js_sports.js"
+    </script>
 
-        <a href="index.html" class="Home">Home</a>
-        <h2>Your content would go here</h2>
-    </div>
+    <header>
+        <img class="logo" src="../IMAGENS/Logo_Projeto_TAW.png" alt="Logo do Clube" height="200" width="200">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    </header>
+    <nav id="menu">
+        <ul>
+            <li><a href="../HTML/index.html">Home</a></li>
+            <li><a href="../HTML/Sports.html" id="actual">Sports</a></li>
+            <li><a href="../HTML/Club History.html">Club History</a></li>
+            <li><a href="../HTML/Shop.html">Shop</a></li>
+            <li><a href="../HTML/Partner.html">Partner</a></li>
+            <li><a href="../HTML/Contacts.html">Contacts</a></li>
+        </ul>
+    </nav>
+
+
+    <section class="container">
+        <div class="sport">
+            <p class="texto-block">Andebol</p>
+            <img id="andebol" onclick="andebol_click()" src="../IMAGENS\sports-andebol-background.jpg" height="300" width="200">
+            <p class="texto-block">Basket</p>
+            <img id="basquetebol" src="../IMAGENS\sports-basket-background.jpg" height="300" width="200">
+        </div>
+        <div class=" sport ">
+            <p class="texto-block ">Hóquei em Patins</p>
+            <img id="hoquei " src="../IMAGENS\sports-hoquei-backgrounds.jpg" height="300" width="200">
+            <p class="texto-block ">Futebol</p>
+            <img id="futebol " src="../IMAGENS\sports-futebol-background.jpg" height="300" width="200">
+        </div>
+        <div class="sport ">
+            <p class="texto-block ">Futebol de Praia</p>
+            <img id="fut_praia " src="../IMAGENS\sports-praia-background.jpg" height="300" width="200">
+            <p class="texto-block ">Futsal</p>
+            <img id="futsal " src="../IMAGENS\sports-futsal-background.jpg" height="300" width="200">
+        </div>
+
+
+
+    </section>
+
 </body>
 
 </html>
