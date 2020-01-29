@@ -1,7 +1,7 @@
     body {
         background-image: linear-gradient(to bottom, orange, red);
         background-repeat: 1;
-        height: 150;
+        height: 150vh;
     }
     
     header {
