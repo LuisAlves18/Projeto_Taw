@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sports</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/css-sports.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <script>
+        src = "../JAVASCRIPT\js_sports.js"
+
+        function login()
+                {
+                    let username = prompt("What's your username?");
+                    let check = false;
+                    var names = ["Tiago","Luis","Leandro","Admin","Miguel"];
+                    var email = ["tiagoserafimsousasantos@hotmail.com","luisp.gama.alves@gmail.com","leomadeira@gmail.com","admin@falchionFlakes.com","miguelcorreia@esmad.ipp.pt"];
+
+
+                    for (var i = 0; i < names.length; i++)
+                    {
+                        if (username == names[i])
+                        {
+                            check = true;
+                            var password = ["Santos","Alves","Madeira","Admin","Correira"];
+                            
+                            let enter = prompt("Tell us your email!");
+                            if (email[i] == enter)
+                            {
+                                let pass = prompt("What's your password?");
+                                if (pass == password[i])
+                                {
+                                    alert("Successfull login.");
+                                    window.location.href = "Partner.html";
+                                }
+                                else
+                                {
+                                    alert("Oops, wrong password.");
+                                    window.location.href = "index.html";
+                                }
+                            }
+                            else
+                            {
+                                alert("Oops, wrong password.");
+                                window.location.href = "index.html";
+                            }
+                            
+                        }
+                        
+
+                    }
+                    if (Boolean(check == false) == true)
+                    {
+                        alert("Oops, you can't access this area!");
+                        window.location.href = "index.html";
+                    }
+                    
+                }
+    </script>
+
+
+    <nav id="menu">
+        <ul>
+            <li><a href="../HTML/index.html">Home</a></li>
+            <li><a href="../HTML/Sports.html" id="actual">Sports</a></li>
+            <li><a href="../HTML/Club History.html">Club History</a></li>
+            <li><a href="../HTML/Shop.html">Shop</a></li>
+            <li><a onclick="login()">Partner</a></li>
+            <li><a href="../HTML/Contacts.html">Contacts</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="row">
+        <div class="col-sm"></div>
+        <div class="col-sm-3">
+            <p class="texto-block">Andebol</p>
+            <img id="andebol" data-toggle="modal" data-target="#myModal1" src="../IMAGENS\sports-andebol-background.jpg" height="300" width="200">
+        </div>
+        <div class="col-sm-3">
+            <p class="texto-block">Basket</p>
+            <img id="basquetebol" data-toggle="modal" data-target="#myModal2" src="../IMAGENS\sports-basket-background.jpg" height="300" width="200">
+        </div>
+        <div class="col-sm-3">
+            <p class="texto-block ">Hóquei em Patins</p>
+            <img id="hoquei " data-toggle="modal" data-target="#myModal3" src="../IMAGENS\sports-hoquei-backgrounds.jpg" height="300" width="200">
+        </div>
+        <div class="col-sm"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm"></div>
+        <div class="col-sm-3">
+            <p class="texto-block ">Futebol</p>
+            <img id="futebol " data-toggle="modal" data-target="#myModal4" src="../IMAGENS\sports-futebol-background.jpg" height="300" width="200">
+        </div>
+        <div class="col-sm-3">
+            <p class="texto-block ">Futebol de Praia</p>
+            <img id="fut_praia " data-toggle="modal" data-target="#myModal5" src="../IMAGENS\sports-praia-background.jpg" height="300" width="200">
+        </div>
+        <div class="col-sm-3">
+            <p class="texto-block ">Futsal</p>
+            <img id="futsal " data-toggle="modal" data-target="#myModal6" src="../IMAGENS\sports-futsal-background.jpg" height="300" width="200">
+        </div>
+        <div class="col-sm"></div>
+    </div>
+
+
+
+
+        <!-- andebol -->
+
+     <div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <!-- <h4 class="modal-title">Modal Header</h4> -->
+        </div>
+        <div class="modal-body">
+          <table class="table table-striped">
+           <thead>
+             <tr>
+               <th scope="col">Posição</th>
+               <th scope="col">Nome</th>
+               <th scope="col">Data de Nascimento</th>
+               <th scope="col">Nacionalidade</th>
+             </tr>
+           </thead>
+           <tbody>
+             <tr>
+               <th scope="row">GR</th>
+               <td>Dinis Melo</td>
+               <td>9/2/1995</td>
+               <td>Português</td>
+             </tr>
+             <tr>
+               <th scope="row">GR</th>
+               <td>Mauro Vitor de Reis</td>
+               <td>21/3/2000</td>
+               <td>Brasileiro</td>
+             </tr>
+             <tr>
+               <th scope="row">GR</th>
+               <td>Rafael Leonardo Pereira</td>
+               <td>4/12/1998</td>
+               <td>Português</td>
+             </tr>
+             <tr>
+               <th scope="row">PE</th>
+               <td>Alexandre Duarte Leite</td>
+               <td>4/8/1997</td>
+               <td>Português</td>
+             </tr>
+             <tr>
+               <th scope="row">PE</th>
+               <td>José Carneiro Oliveira</td>
+               <td>17/12/1994</td>
+               <td>Português</td>
+             </tr>
+             <tr>
+               <th scope="row">LE</th>
+               <td>Matheus Luís Rodrigues de Melo</td>
+               <td>23/12/1990</td>
+               <td>Brasileiro</td>
+             </tr>
+             <tr>
+               <th scope="row">LE</th>
+               <td>Angel Rico Segundo</td>
+               <td>30/6/1993</td>
+               <td>Espanhol</td>
+             </tr>
+             <tr>
+               <th scope="row">C</th>
+               <td>Rayan Vergara</td>
+               <td>4/6/1997</td>
+               <td>Espanhol</td>
+             </tr>
+             <tr>
+               <th scope="row">C</th>
+               <td>Ivan Novak</td>
+               <td>20/9/1999</td>
+               <td>Croata</td>
+             </tr>
+             <tr>
+               <th scope="row">C</th>
+               <td>Jimi Lundgaard Clemmensen</td>
+               <td>16/8/1998</td>
+               <td>Eslovénio</td>
+             </tr>
+             <tr>
+               <th scope="row">LD</th>
+               <td>Ervin Kovac</td>
+               <td>30/3/1999</td>
+               <td>Croata</td>
+             </tr>
+             <tr>
+               <th scope="row">LD</th>
+               <td>Frederico Diogo Maia</td>
+               <td>22/3/1998</td>
+               <td>Português</td>
+             </tr>
+             <tr>
+               <th scope="row">PD</th>
+               <td>Ivan Sandro Matos de Freitas</td>
+               <td>24/2/1990</td>
+               <td>Português</td>
+             </tr>
+             <tr>
+               <th scope="row">PD</th>
+               <td>Marco Marcos de Gomes</td>
+               <td>25/2/1992</td>
+               <td>Português</td>
+             </tr>
+             <tr>
+               <th scope="row">P</th>
+               <td>Jorge Moreira Monteiro</td>
+               <td>9/6/1993</td>
+               <td>Brasileiro</td>
+             </tr>
+             <tr>
+               <th scope="row">P</th>
+               <td>Salvador David Loureiro</td>
+               <td>31/12/1991</td>
+               <td>Brasileiro</td>
+             </tr>
+             <tr>
+               <th scope="row">T</th>
+               <td>Matheus Samuel Pires</td>
+               <td>2/11/1978</td>
+               <td>Brasileiro</td>
+             </tr>
+             <tr>
+               <th scope="row">A</th>
+               <td>Daniel Ribeiro de Gonçalves</td>
+               <td>8/7/1987</td>
+               <td>Português</td>
+             </tr>
+           </tbody>
+        </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- Basquetebol -->
+
+  <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <!-- <h4 class="modal-title">Modal Header</h4> -->
+        </div>
+        <div class="modal-body">
+          <table class="table table-striped">
+           <thead>
+             <tr>
+               <th scope="col">Posição</th>
+               <th scope="col">Nome</th>
+               <th scope="col">Data de Nascimento</th>
+               <th scope="col">Nacionalidade</th>
+             </tr>
+           </thead>
+           <tbody>
+             <tr>
+               <th scope="row">Base</th>
+               <td>Isom Cummings</td>
+               <td>20/8/1999</td>
+               <td>Americano</td>
+             </tr>
+             <tr>
+               <th scope="row">Base</th>
+               <td>Jonathon Reichert</td>
+               <td>14/6/1995</td>
+               <td>Americano</td>
+             </tr>
+             <tr>
+               <th scope="row">Base</th>
+               <td>Rayan Crespo</td>
+               <td>12/11/1997</td>
+               <td>Espanhol</td>
+             </tr>
+             <tr>
+               <th scope="row">2ª Base</th>
+               <td>Ricardo Pereira</td>
+               <td>29/4/1997</td>
+               <td>Português</td>
+             </tr>
+             <tr>
+               <th scope="row">2ª Base</th>
+               <td>Frederico Samuel Loureiro</td>
+               <td>2/10/1998</td>
+               <td>Português</td>
+             </tr>
+             <tr>
+               <th scope="row">Poste</th>
+               <td>Kenneth Dibbert</td>
+               <td>10/12/1995</td>
+               <td>Americano</td>
+             </tr>
+             <tr>
+               <th scope="row">Poste</th>
+               <td>Anastacio Mayert</td>
+               <td>29/12/1990</td>
+               <td>Argentino</td>
+             </tr>
+             <tr>
+               <th scope="row">EP</th>
+               <td>Ivo Moreira</td>
+               <td>13/11/1996</td>
+               <td>Português</td>
+             </tr>
+             <tr>
+               <th scope="row">EP</th>
+               <td>Loic Benali</td>
+               <td>12/12/1999</td>
+               <td>Belga</td>
+             </tr>
+             <tr>
+               <th scope="row">E</th>
+               <td>Mateo Aparicio</td>
+               <td>31/1/1990</td>
+               <td>Espanhol</td>
+             </tr>
+             <tr>
+               <th scope="row">E</th>
+               <td>Bukola Nojeem</td>
+               <td>29/3/1998</td>
+               <td>Nigeriano</td>
+             </tr>
+             <tr>
+               <th scope="row">T</th>
+               <td>Paulo Castro</td>
+               <td>31/13/1969</td>
+               <td>Português</td>
+             </tr>
+             <tr>
+               <th scope="row">A</th>
+               <td>André Ferreira</td>
+               <td>24/2/1980</td>
+               <td>Português</td>
+             </tr>
+             
+           </tbody>
+        </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+  <!-- Hoquei Patins -->
+
+  <div class="modal fade" id="myModal3" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <!-- <h4 class="modal-title">Modal Header</h4> -->
+        </div>
+        <div class="modal-body">
+          <table class="table table-striped">
+           <thead>
+             <tr>
+               <th scope="col">Posição</th>
+               <th scope="col">Nome</th>
+               <th scope="col">Data de Nascimento</th>
+               <th scope="col">Nacionalidade</th>
+             </tr>
+           </thead>
+           <tbody>
+             <tr>
+               <th scope="row">GR</th>
+               <td>Rodrigo António Branco</td>
+               <td>10/9/1995</td>
+               <td>Português</td>
+             </tr>
+             <tr>
+               <th scope="row">GR</th>
+               <td>Konrad Pawlak</td>
+               <td>6/2/2000</td>
+               <td>Polaco</td>
+             </tr>
+             <tr>
+               <th scope="row">GR</th>
+               <td>Norbert Wysocki</td>
+               <td>14/4/1997</td>
+               <td>Polaco</td>
+             </tr>
+             <tr>
+               <th scope="row">JC</th>
+               <td>Zdeneks Saulite</td>
+               <td>12/5/1999</td>
+               <td>Estoniano</td>
+             </tr>
+             <tr>
+               <th scope="row">JC</th>
+               <td>Arnfreyr Ssgeirsson</td>
+               <td>16/8/1997</td>
+               <td>Islandês</td>
+             </tr>
+             <tr>
+               <th scope="row">JC</th>
+               <td>Elentsnus Gudrmonsson</td>
+               <td>18/9/2000</td>
+               <td>Islandês</td>
+             </tr>
+             <tr>
+               <th scope="row">JC</th>
+               <td>Agostinho Ferraz Sobrinho</td>
+               <td>18/9/1996</td>
+               <td>Brasileiro</td>
+             </tr>
+             <tr>
+               <th scope="row">JC</th>
+               <td>Adriano Inácio Gonçalves</td>
+               <td>10/1/1997</td>
+               <td>Brasileiro</td>
+             </tr>
+             <tr>
+               <th scope="row">JC</th>
+               <td>Mateo Ulloa</td>
+               <td>4/7/2000</td>
+               <td>Argentino</td>
+             </tr>
+             <tr>
+               <th scope="row">JC</th>
+               <td>Sebastian Valverde</td>
+               <td>11/11/1999</td>
+               <td>Argentino</td>
+             </tr>
+             <tr>
+               <th scope="row">JC</th>
+               <td>Thibaut Muller-Chauvin</td>
+               <td>15/4/1995</td>
+               <td>Francês</td>
+             </tr>
+             <tr>
+               <th scope="row">JC</th>
+               <td>Daniel Oliveira</td>
+               <td>12/11/1996</td>
+               <td>Português</td>
+             </tr>
+             <tr>
+               <th scope="row">JC</th>
+               <td>Isaac Vasco de Oliveira</td>
+               <td>20/2/2000</td>
+               <td>Português</td>
+             </tr><tr>
+               <th scope="row">T</th>
+               <td>Carlos Álvaro Anjos</td>
+               <td>18/5/1970</td>
+               <td>Português</td>
+             </tr>
+             <tr>
+               <th scope="row">A</th>
+               <td>Leonardo Teixeira</td>
+               <td>17/4/1975</td>
+               <td>Português</td>
+             </tr>
+             
+           </tbody>
+        </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- Futebol -->
+
+  <div class="modal fade" id="myModal4" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <!-- <h4 class="modal-title">Modal Header</h4> -->
+        </div>
+        <div class="modal-body">
+          <table class="table table-striped">
+           <thead>
+             <tr>
+               <th scope="col">Posição</th>
+               <th scope="col">Nome</th>
+               <th scope="col">Data de Nascimento</th>
+               <th scope="col">Nacionalidade</th>
+             </tr>
+           </thead>
+           <tbody>
+             <tr>
+               <th scope="row">GR</th>
+               <td>Xavier Guerreiro Campos</td>
+               <td>15/10/1997</td>
+               <td>Português</td>
+             </tr>
+             <tr>
+               <th scope="row">GR</th>
+               <td>Wilson Santiago Neves</td>
+               <td>11/9/1989</td>
+               <td>Português</td>
+             </tr>
+             <tr>
+               <th scope="row">GR</th>
+               <td>Carlos Reis Santos</td>
+               <td>11/7/1992</td>
+               <td>Português</td>
+             </tr>
+             <tr>
+               <th scope="row">DL</th>
+               <td>Fernando William Moreira</td>
+               <td>31/1/1999</td>
+               <td>Portugues</td>
+             </tr>
+             <tr>
+               <th scope="row">DL</th>
+               <td>Tyler Plaat Stuitjes</td>
+               <td>28/8/2000</td>
+               <td>Holandês</td>
+             </tr>
+             <tr>
+               <th scope="row">DL</th>
+               <td>Jorge Figueiroa</td>
+               <td>18/1/1997</td>
+               <td>Peruano</td>
+             </tr>
+             <tr>
+               <th scope="row">DL</th>
+               <td>Samuel Lucero Tercero</td>
+               <td>11/12/1999</td>
+               <td>Espanhol</td>
+             </tr>
+             <tr>
+               <th scope="row">DC</th>
+               <td>César José de Simões</td>
+               <td>18/2/1995</td>
+               <td>Português</td>
+             </tr>
+             <tr>
+               <th scope="row">DC</th>
+               <td>Christian Pacheco Filho</td>
+               <td>18/4/1986</td>
+               <td>Brasileiro</td>
+             </tr>
+             <tr>
+               <th scope="row">DC</th>
+               <td>Simão Rivera</td>
+               <td>13/7/1998</td>
+               <td>Brasileiro</td>
+             </tr>
+             <tr>
+               <th scope="row">DC</th>
+               <td>Sérgio Matos</td>
+               <td>19/10/1991</td>
+               <td>Português</td>
+             </tr>
+             <tr>
+               <th scope="row">M</th>
+               <td>Mohammed Etiene</td>
+               <td>12/6/1992</td>
+               <td>Belga</td>
+             </tr>
+             <tr>
+               <th scope="row">M</th>
+               <td>Benjamin Mares Hijo</td>
+               <td>9/11/1994</td>
+               <td>Argentina</td>
+             </tr><tr>
+               <th scope="row">M</th>
+               <td>Juan Sebastien Gallardo</td>
+               <td>3/7/1991</td>
+               <td>Argentina</td>
+             </tr>
+             <tr>
+               <th scope="row">M</th>
+               <td>Alex Zemlijic</td>
+               <td>16/6/1999</td>
+               <td>Eslovénio</td>
+             </tr>
+             </tr><tr>
+               <th scope="row">M</th>
+               <td>Lisandro Bernardo Almeida</td>
+               <td>29/12/1987</td>
+               <td>Português</td>
+             </tr>
+             <tr>
+               <th scope="row">M</th>
+               <td>Lucas Lourenço Antunes</td>
+               <td>26/12/1994</td>
+               <td>Português</td>
+             </tr>
+             <tr>
+               <th scope="row">A</th>
+               <td>João William Reis de Garcia</td>
+               <td>23/8/1995</td>
+               <td>Português</td>
+             </tr>
+             <tr>
+               <th scope="row">A</th>
+               <td>Walter Peter</td>
+               <td>16/9/1999</td>
+               <td>Alemão</td>
+             </tr><tr>
+               <th scope="row">A</th>
+               <td>Kevin Griffiths</td>
+               <td>7/6/1995</td>
+               <td>Inglês</td>
+             </tr>
+             <tr>
+               <th scope="row">A</th>
+               <td>Santiago Pereira</td>
+               <td>7/11/1997</td>
+               <td>Português</td>
+             </tr>
+             </tr><tr>
+               <th scope="row">A</th>
+               <td>Giovane Toledo</td>
+               <td>22/1/1997</td>
+               <td>Brasileiro</td>
+             </tr>
+             <tr>
+               <th scope="row">A</th>
+               <td>Jean Garnier</td>
+               <td>20/7/1999</td>
+               <td>Francês</td>
+             </tr>
+             </tr><tr>
+               <th scope="row">T</th>
+               <td>Samuel Raúl Tavares de Melo</td>
+               <td>19/5/1972</td>
+               <td>Português</td>
+             </tr>
+             <tr>
+               <th scope="row">AJ</th>
+               <td>Benjamim Reis Macedo</td>
+               <td>3/9/1975</td>
+               <td>Português</td>
+             </tr>
+             
+           </tbody>
+        </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+   <!-- Futebol de Praia -->
+
+  <div class="modal fade" id="myModal5" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <!-- <h4 class="modal-title">Modal Header</h4> -->
+        </div>
+        <div class="modal-body">
+          <table class="table table-striped">
+           <thead>
+             <tr>
+               <th scope="col">Posição</th>
+               <th scope="col">Nome</th>
+               <th scope="col">Data de Nascimento</th>
+               <th scope="col">Nacionalidade</th>
+             </tr>
+           </thead>
+           <tbody>
+             <tr>
+               <th scope="row">GR</th>
+               <td>Carlos Rafael de Moreira</td>
+               <td>13/7/1985</td>
+               <td>Português</td>
+             </tr>
+             <tr>
+               <th scope="row">GR</th>
+               <td>Daniel Araújo</td>
+               <td>21/10/1995</td>
+               <td>Português</td>
+             </tr>
+             <tr>
+               <th scope="row">GR</th>
+               <td>Trevis Marini</td>
+               <td>30/3/2001</td>
+               <td>Italiano</td>
+             </tr>
+             <tr>
+               <th scope="row">JC</th>
+               <td>Lucas Franco</td>
+               <td>10/11/1998</td>
+               <td>Espanhol</td>
+             </tr>
+             <tr>
+               <th scope="row">JC</th>
+               <td>Sebastião Alves</td>
+               <td>3/8/2001</td>
+               <td>Português</td>
+             </tr>
+             <tr>
+               <th scope="row">JC</th>
+               <td>Leonardo Gonçalves de Azevedo</td>
+               <td>6/8/1998</td>
+               <td>Português</td>
+             </tr>
+             <tr>
+               <th scope="row">JC</th>
+               <td>Arthur Le Letellier</td>
+               <td>28/8/1987</td>
+               <td>Francês</td>
+             </tr>
+             <tr>
+               <th scope="row">JC</th>
+               <td>Victor Lemaire</td>
+               <td>1/2/1993</td>
+               <td>Francês</td>
+             </tr>
+             <tr>
+               <th scope="row">JC</th>
+               <td>Thales Reis Ortega</td>
+               <td>14/8/1998</td>
+               <td>Brasileiro</td>
+             </tr>
+             <tr>
+               <th scope="row">JC</th>
+               <td>Leonardo Neto</td>
+               <td>16/5/1992</td>
+               <td>Brasileiro</td>
+             </tr>
+             <tr>
+               <th scope="row">JC</th>
+               <td>Vasco Tiago Mota Nogueira</td>
+               <td>23/11/1990</td>
+               <td>Português</td>
+             </tr>
+             <tr>
+               <th scope="row">JC</th>
+               <td>Miguel Assunção</td>
+               <td>23/1/2000</td>
+               <td>Português</td>
+             </tr>
+             <tr>
+               <th scope="row">JC</th>
+               <td>Joel Simões Leal Baptista</td>
+               <td>11/1/1997</td>
+               <td>Português</td>
+             </tr><tr>
+               <th scope="row">T</th>
+               <td>Carlos Filipe Santos</td>
+               <td>14/4/1974</td>
+               <td>Portugal</td>
+             </tr>
+             <tr>
+               <th scope="row">AJ</th>
+               <td>José Carmo</td>
+               <td>22/8/1966</td>
+               <td>Portugal</td>
+             </tr>
+             
+             
+           </tbody>
+        </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- Futsal -->
+
+  <div class="modal fade" id="myModal6" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <!-- <h4 class="modal-title">Modal Header</h4> -->
+        </div>
+        <div class="modal-body">
+          <table class="table table-striped">
+           <thead>
+             <tr>
+               <th scope="col">Posição</th>
+               <th scope="col">Nome</th>
+               <th scope="col">Data de Nascimento</th>
+               <th scope="col">Nacionalidade</th>
+             </tr>
+           </thead>
+           <tbody>
+             <tr>
+               <th scope="row">GR</th>
+               <td>Wilson Frederico Baptista</td>
+               <td>1/7/1998</td>
+               <td>Português</td>
+             </tr>
+             <tr>
+               <th scope="row">GR</th>
+               <td>Márcio Valente Rocha</td>
+               <td>20/4/2000</td>
+               <td>Português</td>
+             </tr>
+             <tr>
+               <th scope="row">GR</th>
+               <td>Gabriel Frederico Morais da Rocha</td>
+               <td>11/7/1992</td>
+               <td>Português</td>
+             </tr>
+             <tr>
+               <th scope="row">F</th>
+               <td>Jorge Camilo Serna</td>
+               <td>21/10/1987</td>
+               <td>Brasileiro</td>
+             </tr>
+             <tr>
+               <th scope="row">F</th>
+               <td>Xavier Pacheco</td>
+               <td>9/6/1989</td>
+               <td>Português</td>
+             </tr>
+             <tr>
+               <th scope="row">F</th>
+               <td>Sergio Jaramillo</td>
+               <td>28/4/1998</td>
+               <td>Espanhol</td>
+             </tr>
+             <tr>
+               <th scope="row">Ala</th>
+               <td>Carlos Winter</td>
+               <td>22/9/1999</td>
+               <td>Alemão</td>
+             </tr>
+             <tr>
+               <th scope="row">Ala</th>
+               <td>António Matias de Pires</td>
+               <td>24/10/2000</td>
+               <td>Português</td>
+             </tr>
+             <tr>
+               <th scope="row">Ala</th>
+               <td>Anderson Rafael Ramires</td>
+               <td>23/4/2001</td>
+               <td>Brasileiro</td>
+             </tr>
+             <tr>
+               <th scope="row">Ala</th>
+               <td>Per Klitgaard-Sylvest Ebbesen</td>
+               <td>4/4/1994</td>
+               <td>Dinamarquês</td>
+             </tr>
+             <tr>
+               <th scope="row">P</th>
+               <td>Igor Neto Rocha</td>
+               <td>13/7/1985</td>
+               <td>Português</td>
+             </tr>
+             <tr>
+               <th scope="row">P</th>
+               <td>Viktor Bogetic</td>
+               <td>7/7/2000</td>
+               <td>Montenegro</td>
+             </tr>
+             <tr>
+               <th scope="row">P</th>
+               <td>Henrich Molefe</td>
+               <td>7/9/1995</td>
+               <td>Africa do Sul</td>
+             </tr><tr>
+               <th scope="row">T</th>
+               <td>Artur Faria</td>
+               <td>12/8/1967</td>
+               <td>Portugal</td>
+             </tr>
+             <tr>
+               <th scope="row">AJ</th>
+               <td>Miguel Bastos</td>
+               <td>8/2/1971</td>
+               <td>Portugal</td>
+             </tr>
+             
+             
+           </tbody>
+        </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+
+    </section>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>
