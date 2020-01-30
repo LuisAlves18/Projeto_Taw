@@ -1,7 +1,7 @@
     body {
         background-image: linear-gradient(to bottom, orange, red);
         background-repeat: 1;
-        height: 150vh;
+        height: auto;
     }
     
     header {
@@ -36,24 +36,6 @@
     
     #actual {
         background: orange;
-    }
-    
-    .sport {
-        float: left;
-        position: relative;
-        padding: 0 100px 0;
-    }
-    
-    .texto-block {
-        font-size: 12px;
-        top: 20px;
-        color: black;
-    }
-    
-    .container {
-        content: "";
-        clear: both;
-        display: table;
     }
     
     img {
