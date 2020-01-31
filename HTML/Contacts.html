@@ -14,15 +14,43 @@
 
 <body>
 
-    <nav id="menu">
-        <ul>
-            <li><a href="../HTML/index.html">Home</a></li>
-            <li><a href="../HTML/Sports.html">Desportos</a></li>
-            <li><a href="../HTML/Club History.html">História do Clube</a></li>
-            <li><a onclick="login()">Zona Adepto</a></li>
-            <li><a href="../HTML/Contacts.html" id="actual">Contactos</a></li>
-        </ul>
+    <!--Navbar-->
+    <nav class="navbar navbar-light navbar-1 white">
+
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="#">Menu</a>
+
+        <!-- Collapse button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15" aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent15">
+
+            <!-- Links -->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../HTML/index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../HTML/Sports.html">Desportos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../HTML/Club History.html">História do Clube</a>
+                </li>
+                <li class="nav-item">
+                    <a onclick="login()" class="nav-link">Zona Adepto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../HTML/Contacts.html">Contactos</a>
+                </li>
+            </ul>
+            <!-- Links -->
+
+        </div>
+        <!-- Collapsible content -->
+
     </nav>
+    <!--/.Navbar-->
     <div class="content">
         <form id="form">
             <div class="row justify-content-center">

@@ -13,17 +13,45 @@
 
 <body>
     <div class="content">
-        <nav id="menu">
-            <ul>
-                <li><a href="../HTML/index.html">Home</a></li>
-                <li><a href="../HTML/Sports.html">Desportos</a></li>
-                <li><a href="../HTML/Club History.html">História do Clube</a></li>
-                <li><a onclick="login()" id="actual">Zona Adepto </a></li>
-                <li><a href="../HTML/Contacts.html">Contactos</a></li>
-            </ul>
-        </nav>
+        <!--Navbar-->
+        <nav class="navbar navbar-light navbar-1 white">
 
-        <form>
+            <!-- Navbar brand -->
+            <a class="navbar-brand" href="#">Menu</a>
+
+            <!-- Collapse button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15" aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent15">
+
+                <!-- Links -->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../HTML/index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../HTML/Sports.html">Desportos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../HTML/Club History.html">História do Clube</a>
+                    </li>
+                    <li class="nav-item">
+                        <a onclick="login()" class="nav-link">Zona Adepto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../HTML/Contacts.html">Contactos</a>
+                    </li>
+                </ul>
+                <!-- Links -->
+
+            </div>
+            <!-- Collapsible content -->
+
+        </nav>
+        <!--/.Navbar-->
+
+        <form action="#" method="get" id="form">
             <div class="row ">
                 <div class="col-sm-2">
                     <h2>Registo</h2>
@@ -37,53 +65,32 @@
             <div class="form-group">
                 <div class="row">
                     <div class="col-sm-3">
-                        <label for="InputNome">Nome</label>
+                        <label for="InputName">Nome</label>
                         <input type="text" class="form-control" id="InputName" aria-describedby="emailHelp" placeholder="Insira o seu nome">
                     </div>
                     <div class="col-sm-5"></div>
                     <div class="col-sm-3">
-                        <label for="InputNome">Nome</label>
-                        <input type="text" class="form-control" id="InputName" aria-describedby="emailHelp" placeholder="Insira o seu nome">
+                        <label for="InputEmail2">Nome</label>
+                        <input type="text" class="form-control" id="InputEmail2" aria-describedby="emailHelp" placeholder="Insira o seu nome">
                     </div>
                     <div class="col-sm"></div>
 
                 </div>
             </div>
-
             <div class="form-group">
                 <div class="row">
                     <div class="col-sm-3">
-                        <label for="InputNome">Email</label>
-                        <input type="text" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Insira o seu Email">
-                    </div>
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="row">
+                        <label for="InputNome1">Email</label>
+                        <input type="text" class="form-control" id="InputNome1" aria-describedby="emailHelp" placeholder="Insira o seu Email"></div>
+                    <div class="col-sm-5"></div>
                     <div class="col-sm-3">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        <label for="exampleInputPassword2">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
                     </div>
-                </div>
-            </div>
+                    <div class="col-sm-3">
 
-            <button type="submit" class="btn btn-dark">Submit</button>
-        </form>
-        <div class="row justify-content-right">
-            <form>
+                        <div class="col-sm"></div>
 
-                <div class="form-group">
-                    <div class="row">
-
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <label for="InputNome">Email</label>
-                            <input type="text" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Insira o seu Email">
-                        </div>
                     </div>
                 </div>
                 <div class="form-group">
@@ -92,18 +99,31 @@
                             <label for="exampleInputPassword1">Password</label>
                             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                         </div>
+                        <div class="col-sm-5"></div>
+
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <button type="submit" class="btn btn-dark">Submit</button>
+                        </div>
+                        <div class="col-sm-5"></div>
+                        <div class="col-sm-3">
+                            <button type="submit" id="submit" class="btn btn-dark">Submit</button>
+                        </div>
+                        <div class="col-sm"></div>
                     </div>
                 </div>
 
-                <button type="submit" class="btn btn-dark">Submit</button>
-            </form>
-        </div>
+        </form>
 
-    </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="../JAVASCRIPT/javascript.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="../JAVASCRIPT/javascript.js"></script>
+        <script src="../JAVASCRIPT/partner.js"></script>
 </body>
 
 </html>
