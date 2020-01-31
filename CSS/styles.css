@@ -1,3 +1,8 @@
+body {
+    background-image: linear-gradient(to bottom, orange, red);
+    height: auto;
+}
+
 header {
     background-color: #333;
 }
@@ -28,23 +33,6 @@ li a:hover {
     transform: scale(1.25);
 }
 
-.content {
-    height: auto;
-    background-image: linear-gradient(to bottom, orange, red);
-}
-
-.subject article {
-    width: 150vh;
-    padding-top: 10px;
-    padding-left: 10px;
-    display: flex;
-    flex-direction: row;
-}
-
-.subject article p {
-    padding-left: 10px;
-}
-
-aside {
-    position: realtive;
+.text-center {
+    margin: 10px;
 }

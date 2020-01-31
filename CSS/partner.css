@@ -38,11 +38,8 @@ li a:hover {
     background: orange;
 }
 
-.content div p {
+h2 {
+    margin: 15px;
     color: white;
-}
-
-img {
-    margin-top: 10px;
-    margin-bottom: 20px;
+    text-align: center;
 }

@@ -1,3 +1,9 @@
+body {
+    background-image: linear-gradient(to bottom, orange, red);
+    background-repeat: 1;
+    height: 100vh;
+}
+
 header {
     background-color: #333;
 }

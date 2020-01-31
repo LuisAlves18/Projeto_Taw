@@ -6,9 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Club History</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../CSS/club-history.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+    <script>
+        function login() {
+            let username = prompt("What's your username?");
+            let check = false;
+            var names = ["Tiago", "Luis", "Leandro", "Admin", "Miguel"];
+            var email = ["tiagoserafimsousasantos@hotmail.com", "luisp.gama.alves@gmail.com", "leomadeira@gmail.com", "admin@falchionFlakes.com", "miguelcorreia@esmad.ipp.pt"];
+
+
+            for (var i = 0; i < names.length; i++) {
+                if (username == names[i]) {
+                    check = true;
+                    var password = ["Santos", "Alves", "Madeira", "Admin", "Correira"];
+
+                    let enter = prompt("Tell us your email!");
+                    if (email[i] == enter) {
+                        let pass = prompt("What's your password?");
+                        if (pass == password[i]) {
+                            alert("Successfull login.");
+                            window.location.href = "Partner.html";
+                        } else {
+                            alert("Oops, wrong password.");
+                            window.location.href = "index.html";
+                        }
+                    } else {
+                        alert("Oops, wrong password.");
+                        window.location.href = "index.html";
+                    }
+
+                }
+
+
+            }
+            if (Boolean(check == false) == true) {
+                alert("Oops, you can't access this area!");
+                window.location.href = "index.html";
+            }
+
+        }
+    </script>
 </head>
 
 <body>
@@ -17,20 +56,16 @@
         <nav id="menu">
             <ul>
                 <li><a href="../HTML/index.html">Home</a></li>
-                <li><a href="../HTML/Sports.html">Sports</a></li>
-                <li><a href="../HTML/Club History.html" id="actual">Club History</a></li>
-                <li><a href="../HTML/Shop.html">Shop</a></li>
-                <li><a href="../HTML/Partner.html">Partner</a></li>
-                <li><a href="../HTML/Contacts.html">Contacts</a></li>
+                <li><a href="../HTML/Sports.html">Desportos</a></li>
+                <li><a href="../HTML/Club History.html" id="actual">História do Clube</a></li>
+                <li><a onclick="login()">Zona Adepto</a></li>
+                <li><a href="../HTML/Contacts.html">Contactos</a></li>
             </ul>
         </nav>
-        <div class="row">
-            <div class="col-sm-4"></div>
-            <div id="img" class="col-sm-4">
-                <img src="../IMAGENS\club-history-background.jpg" width="400" height="225">
-                <div class="col-sm-4"></div>
-            </div>
+        <div class="text-center">
+            <img src="../IMAGENS\club-history-background.jpg" class="img-fluid" alt="Responsive image" width="400">
         </div>
+
         <div class="row">
             <div class="col-sm-1"></div>
             <div class="col-sm-2">
