@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Club History</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/club-history.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script>
+        function login() {
+            let username = prompt("What's your username?");
+            let check = false;
+            var names = ["Tiago", "Luis", "Leandro", "Admin", "Miguel"];
+            var email = ["tiagoserafimsousasantos@hotmail.com", "luisp.gama.alves@gmail.com", "leomadeira@gmail.com", "admin@falchionFlakes.com", "miguelcorreia@esmad.ipp.pt"];
+
+
+            for (var i = 0; i < names.length; i++) {
+                if (username == names[i]) {
+                    check = true;
+                    var password = ["Santos", "Alves", "Madeira", "Admin", "Correira"];
+
+                    let enter = prompt("Tell us your email!");
+                    if (email[i] == enter) {
+                        let pass = prompt("What's your password?");
+                        if (pass == password[i]) {
+                            alert("Successfull login.");
+                            window.location.href = "Partner.html";
+                        } else {
+                            alert("Oops, wrong password.");
+                            window.location.href = "index.html";
+                        }
+                    } else {
+                        alert("Oops, wrong password.");
+                        window.location.href = "index.html";
+                    }
+
+                }
+
+
+            }
+            if (Boolean(check == false) == true) {
+                alert("Oops, you can't access this area!");
+                window.location.href = "index.html";
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <div class="content">
+
+        <nav id="menu">
+            <ul>
+                <li><a href="../HTML/index.html">Home</a></li>
+                <li><a href="../HTML/Sports.html">Desportos</a></li>
+                <li><a href="../HTML/Club History.html" id="actual">História do Clube</a></li>
+                <li><a onclick="login()">Zona Adepto</a></li>
+                <li><a href="../HTML/Contacts.html">Contactos</a></li>
+            </ul>
+        </nav>
+        <div class="text-center">
+            <img src="../IMAGENS\club-history-background.jpg" class="img-fluid" alt="Responsive image" width="400">
+        </div>
+
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-2">
+                <p>
+                    Em 1947 o barão de Greenparrotfield, embaixador de Inglaterra em Wittgenstein, decidiu criar um clube desportivo para os funcionários e amigos da embaixada. O clube, inicialmente dedicou-se ao futebol mas logo foram aparecendo outras modalidades, por
+                </p>
+            </div>
+            <div class="col-sm-2">
+                <p>
+                    sugestão de alguns dos frequentadores desses domingos desportivos. Por causa da sua paixão pelos cereais tostados nos longos pequenos-almoços em grupo, e devido à proximidade com a reserva natural de Kinderwasser, famosa pelas aves de
+                </p>
+            </div>
+            <div class="col-sm-2">
+                <p>
+                    rapina, o clube recebeu o nome de Falcon Flakes. Ao longo do final do século XX, o clube foi progressivamente ganhando maiores dimensões e profissionalizou-se, chegando a obter alguns sucessos desportivos, nomeadamente no andebol e no
+                </p>
+
+            </div>
+            <div class="col-sm-2">
+                <p>
+                    basquetebol, onde chegou a umas meias-finais da taça e ganhou alguns títulos nas camadas jovens, respectivamente. Actualmente o clube conta com meia dúzia modalidades e assenta o seu projecto na formação de jovens atletas e no trabalho com a comunidade.
+
+                </p>
+            </div>
+            <div class="col-sm-2">
+                <p>
+                    O seu actual presidente. Jacob Parrot, é ainda descendente do Barão de Greenparrotfield, e sob o seu comando o clube conseguiu grandes melhoramentos nas suas infraestruturas, a ponto do seu pavilhão ter sido escolhido para receber alguns jogos do próximo
+                    europeu de Hóquei em Patins.
+                </p>
+            </div>
+            <div class="col-sm-1"></div>
+
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>
